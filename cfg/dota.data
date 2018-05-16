@@ -1,0 +1,6 @@
+classes=15
+train  = /home/yh/dota/dota_data/YOLO/train/train.txt
+valid  = /home/yh/dota/dota_data/YOLO/test/test.txt
+names = data/dota.names
+backup = /home/yh/dota/darknet/dota-backup
+
