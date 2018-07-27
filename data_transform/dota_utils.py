@@ -94,13 +94,13 @@ def parse_dota_poly(filename):
             break
     return objects
 
-def dots4ToRecC(poly):
+def dots4ToRecC(poly, img_w, img_h):
     xmin, ymin, xmax, ymax = dots4ToRec4(poly)
     x = (xmin + xmax)/2
     y = (ymin + ymax)/2
     w = xmax - xmin
     h = ymax - ymin
-    return x, y, w, h
+    return x/img_w, y/img_h, w/img_w, h/img_h
 
 def parse_dota_poly2(filename):
     """
