@@ -32,7 +32,7 @@ Our code is tested on official <a href="https://github.com/pjreddie/darknet">dar
       sh train-dota.sh 
   ```
 * Evaluate the Results<br>
-  You can download the pre-trained model on DOTA from <a href="https://pan.baidu.com/s/1A23G8zlmJxj0o3MgG7rkrA">Baidu Drive<a>, and use it to test all the test images.
+  You can download the pre-trained model on DOTA from <a href="https://pan.baidu.com/s/1A23G8zlmJxj0o3MgG7rkrA">Baidu Drive<a> or <a href="https://drive.google.com/open?id=1bE1WU0HhVd2ZGZur2TC9QcTWnmgHtwZ6">Google Drive<a>, and use it to test all the test images.
   ```
       sh valid-dota.sh 
   ```
