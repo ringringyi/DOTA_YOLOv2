@@ -35,7 +35,7 @@ Our code is tested on official <a href="https://github.com/pjreddie/darknet">dar
       names = data/dota.names
       backup = /home/yh/dota/darknet/dota-backup
   ```
-  You should replace the path here with the path where you put your corresponding file. And the text file like train.txt or test.txt list the image files for training or test. Notice that we use the full path of the image instead of the file name.
+  You should replace the path here with the path where you put your corresponding file. And the text files like train.txt or test.txt list the image files for training or test. Notice that we use the full path of the image instead of the file name.
 
 * Train the Model<br>
   ```
