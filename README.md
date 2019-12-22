@@ -26,6 +26,17 @@ Our code is tested on official <a href="https://github.com/pjreddie/darknet">dar
   
   Note that this code is for the image of size 1024*1024. If not, you should modify it accroding to your image size. For DOTA, you can refer to  <a href="https://github.com/CAPTAIN-WHU/DOTA_devkit/blob/master/ImgSplit.py">DOTA_devkit/ImgSplit.py<a> to split the images and labels.
 
+* Modify Cfg for Your Data<br>
+ You have to change the <a href="https://github.com/ringringyi/DOTA_YOLOv2/blob/master/cfg/dota.data">cfg/dota.data<a> config file to point to your data:
+  ```
+      classes=15
+      train  = /home/yh/dota/dota_data/YOLO/train/train.txt
+      valid  = /home/yh/dota/dota_data/YOLO/test/test.txt
+      names = data/dota.names
+      backup = /home/yh/dota/darknet/dota-backup
+  ```
+  You should replace the path here with the path where you put your corresponding file. And the text file like train.txt or test.txt list the image files for training or test. Notice that we use the full path of the image instead of the file name.
+
 * Train the Model<br>
   ```
       wget https://pjreddie.com/media/files/darknet19_448.conv.23
